@@ -6,9 +6,11 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { FAVICON } from "./lib/vars/contants";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -21,6 +23,11 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
+  {
+    rel: "icon",
+    href: FAVICON,
+    type: "image/x-icon",
+  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -29,12 +36,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <Meta />
         <Links />
       </head>
       <body>
         {children}
         <ScrollRestoration />
+        <SpeedInsights />
         <Scripts />
       </body>
     </html>
