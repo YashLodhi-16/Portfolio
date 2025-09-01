@@ -11,3 +11,10 @@ export const SPRING_3D =
   "https://res.cloudinary.com/dblq992uw/image/upload/v1755888316/Portfolio/images/object-3d-2_gvusn5.png";
 export const BALL_3D =
   "https://res.cloudinary.com/dblq992uw/image/upload/v1755888317/Portfolio/images/object-3d-1_qpfvlk.png";
+
+export const CONTACT_ROUTE = "/contact";
+
+export const EMAIL = "yashlodhi2006@gmail.com";
+
+export const LOGO_TRANSPARENT =
+  "https://res.cloudinary.com/dblq992uw/image/upload/v1756665990/Portfolio/Logo/PFP-Photoroom_qnuksc.png";

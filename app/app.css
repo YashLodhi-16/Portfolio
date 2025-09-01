@@ -157,3 +157,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.card {
+  @apply rounded-2xl px-2 py-2 bg-white dark:bg-dark-theme-bg;
+}
